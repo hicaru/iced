@@ -1088,7 +1088,7 @@ pub fn draw<Renderer>(
             bounds,
             border_radius: appearance.border_radius,
             border_width: appearance.border_width,
-            border_color: appearance.border_color,
+            border_color: appearance.border_color.into(),
         },
         appearance.background,
     );
@@ -1137,7 +1137,7 @@ pub fn draw<Renderer>(
                             },
                             border_radius: 0.0.into(),
                             border_width: 0.0,
-                            border_color: Color::TRANSPARENT,
+                            border_color: Color::TRANSPARENT.into(),
                         },
                         theme.value_color(style),
                     ))
@@ -1178,7 +1178,7 @@ pub fn draw<Renderer>(
                             },
                             border_radius: 0.0.into(),
                             border_width: 0.0,
-                            border_color: Color::TRANSPARENT,
+                            border_color: Color::TRANSPARENT.into(),
                         },
                         theme.selection_color(style),
                     )),

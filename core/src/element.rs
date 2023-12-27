@@ -545,7 +545,7 @@ where
             renderer.fill_quad(
                 renderer::Quad {
                     bounds: layout.bounds(),
-                    border_color: color,
+                    border_color: color.into(),
                     border_width: 1.0,
                     border_radius: 0.0.into(),
                 },

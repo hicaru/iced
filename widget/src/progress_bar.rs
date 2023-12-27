@@ -135,7 +135,7 @@ where
                 bounds: Rectangle { ..bounds },
                 border_radius: style.border_radius,
                 border_width: 0.0,
-                border_color: Color::TRANSPARENT,
+                border_color: Color::TRANSPARENT.into(),
             },
             style.background,
         );
@@ -149,7 +149,7 @@ where
                     },
                     border_radius: style.border_radius,
                     border_width: 0.0,
-                    border_color: Color::TRANSPARENT,
+                    border_color: Color::TRANSPARENT.into(),
                 },
                 style.bar,
             );

@@ -1,7 +1,7 @@
 use crate::Color;
 
-/// The border radii for the corners of a graphics primitive in the order:
-/// top-left, top-right, bottom-right, bottom-left.
+/// The border colors for the corners of a graphics primitive in the order:
+/// top, right, bottom, left.
 #[derive(Debug, Clone, Copy, PartialEq)]
 pub struct BorderColor([Color; 4]);
 
@@ -26,5 +26,24 @@ impl From<[Color; 4]> for BorderColor {
 impl From<BorderColor> for [Color; 4] {
     fn from(bc: BorderColor) -> Self {
         bc.0
+    }
+}
+
+impl BorderColor {
+    /// get top broder color
+    pub fn top(&self) -> Color {
+        self.0[0]
+    }
+    /// get bottom broder color
+    pub fn bottom(&self) -> Color {
+        self.0[2]
+    }
+    /// get left broder color
+    pub fn left(&self) -> Color {
+        self.0[3]
+    }
+    /// get right broder color
+    pub fn right(&self) -> Color {
+        self.0[1]
     }
 }

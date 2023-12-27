@@ -401,7 +401,7 @@ where
                     },
                     border_radius: styling.border_radius,
                     border_width: 0.0,
-                    border_color: Color::TRANSPARENT,
+                    border_color: Color::TRANSPARENT.into(),
                 },
                 Background::Color([0.0, 0.0, 0.0, 0.5].into()),
             );

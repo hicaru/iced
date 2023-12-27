@@ -1,5 +1,5 @@
 //! Change the appearance of a scrollable.
-use iced_core::{Background, BorderRadius, Color};
+use iced_core::{Background, BorderColor, BorderRadius, Color};
 
 /// The appearance of a scrollable.
 #[derive(Debug, Clone, Copy)]
@@ -11,7 +11,7 @@ pub struct Scrollbar {
     /// The border width of a scrollable.
     pub border_width: f32,
     /// The border [`Color`] of a scrollable.
-    pub border_color: Color,
+    pub border_color: BorderColor,
     /// The appearance of the [`Scroller`] of a scrollable.
     pub scroller: Scroller,
 }
@@ -26,7 +26,7 @@ pub struct Scroller {
     /// The border width of the scroller.
     pub border_width: f32,
     /// The border [`Color`] of the scroller.
-    pub border_color: Color,
+    pub border_color: BorderColor,
 }
 
 /// A set of rules that dictate the style of a scrollable.

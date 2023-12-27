@@ -1,5 +1,5 @@
 //! Change the apperance of a slider.
-use iced_core::{BorderRadius, Color};
+use iced_core::{BorderColor, BorderRadius, Color};
 
 /// The appearance of a slider.
 #[derive(Debug, Clone, Copy)]
@@ -31,7 +31,7 @@ pub struct Handle {
     /// The border width of the handle.
     pub border_width: f32,
     /// The border [`Color`] of the handle.
-    pub border_color: Color,
+    pub border_color: BorderColor,
 }
 
 /// The shape of the handle of a slider.

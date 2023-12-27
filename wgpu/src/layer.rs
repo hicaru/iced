@@ -192,7 +192,7 @@ impl<'a> Layer<'a> {
                         bounds.y + translation.y,
                     ],
                     size: [bounds.width, bounds.height],
-                    border_color: color::pack(*border_color),
+                    border_color: color::pack(border_color.top()),
                     border_radius: *border_radius,
                     border_width: *border_width,
                 };

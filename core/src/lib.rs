@@ -54,6 +54,7 @@ mod vector;
 pub use alignment::Alignment;
 pub use angle::{Degrees, Radians};
 pub use background::Background;
+pub use border_color::BorderColor;
 pub use border_radius::BorderRadius;
 pub use clipboard::Clipboard;
 pub use color::Color;

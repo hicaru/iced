@@ -907,7 +907,7 @@ pub fn draw<Renderer>(
                 if scrollbar.bounds.width > 0.0
                     && scrollbar.bounds.height > 0.0
                     && (style.background.is_some()
-                        || (style.border_color != Color::TRANSPARENT
+                        || (style.border_color != Color::TRANSPARENT.into()
                             && style.border_width > 0.0))
                 {
                     renderer.fill_quad(
@@ -927,7 +927,8 @@ pub fn draw<Renderer>(
                 if scrollbar.scroller.bounds.width > 0.0
                     && scrollbar.scroller.bounds.height > 0.0
                     && (style.scroller.color != Color::TRANSPARENT
-                        || (style.scroller.border_color != Color::TRANSPARENT
+                        || (style.scroller.border_color
+                            != Color::TRANSPARENT.into()
                             && style.scroller.border_width > 0.0))
                 {
                     renderer.fill_quad(

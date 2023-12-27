@@ -403,7 +403,7 @@ pub fn draw<T, R>(
             },
             border_radius: style.rail.border_radius,
             border_width: 0.0,
-            border_color: Color::TRANSPARENT,
+            border_color: Color::TRANSPARENT.into(),
         },
         style.rail.colors.1,
     );
@@ -418,7 +418,7 @@ pub fn draw<T, R>(
             },
             border_radius: style.rail.border_radius,
             border_width: 0.0,
-            border_color: Color::TRANSPARENT,
+            border_color: Color::TRANSPARENT.into(),
         },
         style.rail.colors.0,
     );

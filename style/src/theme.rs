@@ -366,7 +366,7 @@ fn checkbox_appearance(
         icon_color,
         border_radius: 2.0.into(),
         border_width: 1.0,
-        border_color: accent.color,
+        border_color: accent.color.into(),
         text_color: None,
     }
 }
@@ -403,7 +403,7 @@ impl container::StyleSheet for Theme {
                     background: Some(palette.background.weak.color.into()),
                     border_radius: 2.0.into(),
                     border_width: 0.0,
-                    border_color: Color::TRANSPARENT,
+                    border_color: Color::TRANSPARENT.into(),
                 }
             }
             Container::Custom(custom) => custom.appearance(self),
@@ -443,7 +443,7 @@ impl slider::StyleSheet for Theme {
                         border_radius: 4.0.into(),
                     },
                     color: Color::WHITE,
-                    border_color: Color::WHITE,
+                    border_color: Color::WHITE.into(),
                     border_width: 1.0,
                 };
 
@@ -458,7 +458,7 @@ impl slider::StyleSheet for Theme {
                     },
                     handle: slider::Handle {
                         color: palette.background.base.color,
-                        border_color: palette.primary.base.color,
+                        border_color: palette.primary.base.color.into(),
                         ..handle
                     },
                 }
@@ -574,7 +574,7 @@ impl pick_list::StyleSheet for Theme {
                     handle_color: palette.background.weak.text,
                     border_radius: 2.0.into(),
                     border_width: 1.0,
-                    border_color: palette.background.strong.color,
+                    border_color: palette.background.strong.color.into(),
                 }
             }
             PickList::Custom(custom, _) => custom.active(self),
@@ -593,7 +593,7 @@ impl pick_list::StyleSheet for Theme {
                     handle_color: palette.background.weak.text,
                     border_radius: 2.0.into(),
                     border_width: 1.0,
-                    border_color: palette.primary.strong.color,
+                    border_color: palette.primary.strong.color.into(),
                 }
             }
             PickList::Custom(custom, _) => custom.hovered(self),
@@ -747,7 +747,7 @@ impl pane_grid::StyleSheet for Theme {
                         ..palette.primary.base.color
                     }),
                     border_width: 2.0,
-                    border_color: palette.primary.strong.color,
+                    border_color: palette.primary.strong.color.into(),
                     border_radius: 0.0.into(),
                 }
             }
@@ -958,12 +958,12 @@ impl scrollable::StyleSheet for Theme {
                     background: Some(palette.background.weak.color.into()),
                     border_radius: 2.0.into(),
                     border_width: 0.0,
-                    border_color: Color::TRANSPARENT,
+                    border_color: Color::TRANSPARENT.into(),
                     scroller: scrollable::Scroller {
                         color: palette.background.strong.color,
                         border_radius: 2.0.into(),
                         border_width: 0.0,
-                        border_color: Color::TRANSPARENT,
+                        border_color: Color::TRANSPARENT.into(),
                     },
                 }
             }
@@ -985,12 +985,12 @@ impl scrollable::StyleSheet for Theme {
                         background: Some(palette.background.weak.color.into()),
                         border_radius: 2.0.into(),
                         border_width: 0.0,
-                        border_color: Color::TRANSPARENT,
+                        border_color: Color::TRANSPARENT.into(),
                         scroller: scrollable::Scroller {
                             color: palette.primary.strong.color,
                             border_radius: 2.0.into(),
                             border_width: 0.0,
-                            border_color: Color::TRANSPARENT,
+                            border_color: Color::TRANSPARENT.into(),
                         },
                     }
                 } else {
@@ -1208,7 +1208,7 @@ impl text_editor::StyleSheet for Theme {
             background: palette.background.base.color.into(),
             border_radius: 2.0.into(),
             border_width: 1.0,
-            border_color: palette.background.strong.color,
+            border_color: palette.background.strong.color.into(),
         }
     }
 
@@ -1223,7 +1223,7 @@ impl text_editor::StyleSheet for Theme {
             background: palette.background.base.color.into(),
             border_radius: 2.0.into(),
             border_width: 1.0,
-            border_color: palette.background.base.text,
+            border_color: palette.background.base.text.into(),
         }
     }
 
@@ -1238,7 +1238,7 @@ impl text_editor::StyleSheet for Theme {
             background: palette.background.base.color.into(),
             border_radius: 2.0.into(),
             border_width: 1.0,
-            border_color: palette.primary.strong.color,
+            border_color: palette.primary.strong.color.into(),
         }
     }
 
@@ -1283,7 +1283,7 @@ impl text_editor::StyleSheet for Theme {
             background: palette.background.weak.color.into(),
             border_radius: 2.0.into(),
             border_width: 1.0,
-            border_color: palette.background.strong.color,
+            border_color: palette.background.strong.color.into(),
         }
     }
 

@@ -983,7 +983,7 @@ pub fn draw<Renderer, T>(
                         },
                         border_radius: 0.0.into(),
                         border_width: 0.0,
-                        border_color: Color::TRANSPARENT,
+                        border_color: Color::TRANSPARENT.into(),
                     },
                     highlight.color,
                 );

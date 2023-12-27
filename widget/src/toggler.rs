@@ -317,7 +317,8 @@ where
                 border_width: 1.0,
                 border_color: style
                     .background_border
-                    .unwrap_or(style.background),
+                    .unwrap_or(style.background)
+                    .into(),
             },
             style.background,
         );
@@ -341,7 +342,8 @@ where
                 border_width: 1.0,
                 border_color: style
                     .foreground_border
-                    .unwrap_or(style.foreground),
+                    .unwrap_or(style.foreground)
+                    .into(),
             },
             style.foreground,
         );

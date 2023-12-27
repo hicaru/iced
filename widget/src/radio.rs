@@ -315,7 +315,7 @@ where
                     bounds,
                     border_radius: (size / 2.0).into(),
                     border_width: custom_style.border_width,
-                    border_color: custom_style.border_color,
+                    border_color: custom_style.border_color.into(),
                 },
                 custom_style.background,
             );
@@ -331,7 +331,7 @@ where
                         },
                         border_radius: (dot_size / 2.0).into(),
                         border_width: 0.0,
-                        border_color: Color::TRANSPARENT,
+                        border_color: Color::TRANSPARENT.into(),
                     },
                     custom_style.dot_color,
                 );

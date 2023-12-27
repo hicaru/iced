@@ -1,5 +1,5 @@
 //! Change the appearance of a pick list.
-use iced_core::{Background, BorderRadius, Color};
+use iced_core::{Background, BorderColor, BorderRadius, Color};
 
 /// The appearance of a pick list.
 #[derive(Debug, Clone, Copy)]
@@ -17,7 +17,7 @@ pub struct Appearance {
     /// The border width of the pick list.
     pub border_width: f32,
     /// The border color of the pick list.
-    pub border_color: Color,
+    pub border_color: BorderColor,
 }
 
 /// A set of rules that dictate the style of a container.

@@ -129,7 +129,7 @@ where
                 bounds,
                 border_radius: style.radius,
                 border_width: 0.0,
-                border_color: Color::TRANSPARENT,
+                border_color: Color::TRANSPARENT.into(),
             },
             style.color,
         );

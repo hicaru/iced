@@ -1,4 +1,6 @@
 //! Change the appearance of a text editor.
+use iced_core::BorderColor;
+
 use crate::core::{Background, BorderRadius, Color};
 
 /// The appearance of a text input.
@@ -11,7 +13,7 @@ pub struct Appearance {
     /// The border width of the text input.
     pub border_width: f32,
     /// The border [`Color`] of the text input.
-    pub border_color: Color,
+    pub border_color: BorderColor,
 }
 
 /// A set of rules that dictate the style of a text input.

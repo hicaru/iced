@@ -510,7 +510,7 @@ where
                                 },
                                 border_radius: 0.0.into(),
                                 border_width: 0.0,
-                                border_color: Color::TRANSPARENT,
+                                border_color: Color::TRANSPARENT.into(),
                             },
                             theme.value_color(&self.style),
                         );
@@ -525,7 +525,7 @@ where
                                 bounds: range,
                                 border_radius: 0.0.into(),
                                 border_width: 0.0,
-                                border_color: Color::TRANSPARENT,
+                                border_color: Color::TRANSPARENT.into(),
                             },
                             theme.selection_color(&self.style),
                         );

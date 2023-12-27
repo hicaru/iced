@@ -3,7 +3,9 @@ use crate::core::alignment;
 use crate::core::image;
 use crate::core::svg;
 use crate::core::text;
-use crate::core::{Background, Color, Font, Pixels, Point, Rectangle, Vector};
+use crate::core::{
+    Background, BorderColor, Color, Font, Pixels, Point, Rectangle, Vector,
+};
 use crate::text::editor;
 use crate::text::paragraph;
 
@@ -68,7 +70,7 @@ pub enum Primitive<T> {
         /// The border width of the quad
         border_width: f32,
         /// The border color of the quad
-        border_color: Color,
+        border_color: BorderColor,
     },
     /// An image primitive
     Image {

@@ -277,7 +277,7 @@ impl Backend {
                             &border_path,
                             &tiny_skia::Paint {
                                 shader: tiny_skia::Shader::SolidColor(
-                                    into_color(*border_color),
+                                    into_color(border_color.top()),
                                 ),
                                 anti_alias: true,
                                 ..tiny_skia::Paint::default()
@@ -333,7 +333,7 @@ impl Backend {
                             &border_radius_path,
                             &tiny_skia::Paint {
                                 shader: tiny_skia::Shader::SolidColor(
-                                    into_color(*border_color),
+                                    into_color(border_color.top()),
                                 ),
                                 anti_alias: true,
                                 ..tiny_skia::Paint::default()
