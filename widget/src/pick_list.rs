@@ -302,7 +302,7 @@ impl<'a, T: 'a, Message, Renderer> From<PickList<'a, T, Message, Renderer>>
 where
     T: Clone + ToString + Eq + 'static,
     [T]: ToOwned<Owned = Vec<T>>,
-    Message: 'a + Copy,
+    Message: 'a + Clone,
     Renderer: text::Renderer + 'a,
     Renderer::Theme: StyleSheet
         + scrollable::StyleSheet
