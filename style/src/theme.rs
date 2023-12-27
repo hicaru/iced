@@ -1092,7 +1092,7 @@ impl text_input::StyleSheet for Theme {
             background: palette.background.base.color.into(),
             border_radius: 2.0.into(),
             border_width: 1.0,
-            border_color: palette.background.strong.color,
+            border_color: palette.background.strong.color.into(),
             icon_color: palette.background.weak.text,
         }
     }
@@ -1108,7 +1108,7 @@ impl text_input::StyleSheet for Theme {
             background: palette.background.base.color.into(),
             border_radius: 2.0.into(),
             border_width: 1.0,
-            border_color: palette.background.base.text,
+            border_color: palette.background.base.text.into(),
             icon_color: palette.background.weak.text,
         }
     }
@@ -1124,7 +1124,7 @@ impl text_input::StyleSheet for Theme {
             background: palette.background.base.color.into(),
             border_radius: 2.0.into(),
             border_width: 1.0,
-            border_color: palette.primary.strong.color,
+            border_color: palette.primary.strong.color.into(),
             icon_color: palette.background.weak.text,
         }
     }
@@ -1170,7 +1170,7 @@ impl text_input::StyleSheet for Theme {
             background: palette.background.weak.color.into(),
             border_radius: 2.0.into(),
             border_width: 1.0,
-            border_color: palette.background.strong.color,
+            border_color: palette.background.strong.color.into(),
             icon_color: palette.background.strong.color,
         }
     }
