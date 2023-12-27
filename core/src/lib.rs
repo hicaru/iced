@@ -36,6 +36,7 @@ pub mod window;
 
 mod angle;
 mod background;
+mod border_color;
 mod border_radius;
 mod color;
 mod content_fit;
